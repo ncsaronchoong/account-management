@@ -1,0 +1,31 @@
+<div class="col-md-6">
+    <h2 class="text-center">Add Product</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Supplier Name:</label>
+        <input type="name" [(ngModel)]="supplier.supplierName" placeholder="Supplier Name" name="Supplier Name" class="form-control" id="name">
+      </div>
+    
+      <div class="form-group">
+        <label for="designation"> Address:</label>
+        <input [(ngModel)]="supplier.address" placeholder="Address" name="Address" class="form-control" id="designation">
+      </div>
+
+      <div class="form-group">
+        <label for="empId">Contact Number:</label>
+        <input [(ngModel)]="supplier.contactNumber" placeholder="ContactNumber" name="ContactNumber" class="form-control" id="employeeid">
+      </div>
+
+      <div class="form-group">
+        <label for="empId">Email:</label>
+        <input [(ngModel)]="supplier.email" placeholder="Email" name="Email" class="form-control" id="employeeid">
+      </div>
+    
+      <div class="form-group">
+        <label for="empId">Supplier Id:</label>
+        <input [(ngModel)]="supplier.supplierId" placeholder="Supplier Id" name="Supplier Id" class="form-control" id="employeeid">
+      </div>
+    
+      <button class="btn btn-success" (click)="addSupplier()">Create</button>
+    </form>
+    </div>

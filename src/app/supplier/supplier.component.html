@@ -1,0 +1,23 @@
+<table border="1">
+    <thead></thead>
+    <tr>
+      <th>Supplier Name</th>
+      <th>Address</th>
+      <th>Contact Number</th>
+      <th>Email</th>
+    </tr>
+    
+    <tbody>
+
+      <tr *ngFor="let supplier of suppliers">
+        <td>{{supplier.supplierName}}</td>
+        <td>{{supplier.address}}</td>
+        <td>{{supplier.contactNumber}}</td>
+        <td>{{supplier.email}}</td>
+        <td><button class="btn btn-danger" (click)="updateSupplier(supplier)"> Update Supplier</button></td>
+        <td><button class="btn btn-danger" (click)="deleteSupplier(supplier)"> Delete Supplier</button></td>
+      </tr>
+
+    </tbody>
+
+</table>
