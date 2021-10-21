@@ -5,9 +5,11 @@
     <ul class="navbar-nav">
       <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/product" class="nav-link">View Products</a></li>
       <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/addproduct" class="nav-link">Add New Product</a></li>
+      <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/supplier" class="nav-link"> View Suppliers </a></li>
+      <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/addsupplier" class="nav-link">Add New Supplier</a></li>
       <li><a *ngIf="!loginService.isUserLoggedIn()" routerLink="/login" class="nav-link">Login</a></li>
       <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/logout" class="nav-link">LogOut</a></li>
-    
+
     </ul>
     
     </nav>
