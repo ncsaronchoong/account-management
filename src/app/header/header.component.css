@@ -1,0 +1,35 @@
+header {
+  background: white;
+  padding: 0;
+  border-bottom: 3px solid #377a71;
+}
+
+a {
+  color: #0c2b27  
+}
+
+  a:hover {
+    background: #377a71;
+    color: white;
+  }
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+a.logo {
+  font-weight: bold;
+  padding: 1em;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+  nav ul li a {
+    padding: 1em;
+    display: inline-block;
+  }

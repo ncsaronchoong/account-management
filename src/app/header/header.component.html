@@ -1,17 +1,26 @@
 <header>
-    <nav class ="navbar navbar-expand-md navbar-dark bg-dark">
-    <div><a href="https://www.javainuse.com" class="navbar-brand">JavaInUse</a></div>
-    
+  <nav class="navbar navbar-expand-md ">
+
+    <div><a href="#" routerLink="/"  style="font-size:40px;" class="navbar-brand">ShopIt</a></div>
+       
     <ul class="navbar-nav">
       <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/product" class="nav-link">View Products</a></li>
       <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/addproduct" class="nav-link">Add New Product</a></li>
       <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/supplier" class="nav-link"> View Suppliers </a></li>
       <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/addsupplier" class="nav-link">Add New Supplier</a></li>
+      <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/cart" class="nav-link">Start Shopping</a></li>
       <li><a *ngIf="!loginService.isUserLoggedIn()" routerLink="/login" class="nav-link">Login</a></li>
       <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/logout" class="nav-link">LogOut</a></li>
 
     </ul>
-    
-    </nav>
-    
-    </header>
+
+    <button class="btn btn-primary" >
+      <i style="font-size:30px;"  class="fas fa-cart-plus"></i>
+      <div style="font-size: 10px" class="badge bg-danger">5</div>
+    </button>
+
+
+  </nav>
+
+
+</header>
